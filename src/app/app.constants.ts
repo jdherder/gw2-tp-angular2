@@ -1,5 +1,5 @@
 export class AppConstants {
-    public static goldMultiplier = 10000;
-    public static silverMultiplier = 100;
-    public static copperMultiplier = 1;
+    public static goldMultiplier: number = 10000;
+    public static silverMultiplier: number = 100;
+    public static copperMultiplier: number = 1;
 }
