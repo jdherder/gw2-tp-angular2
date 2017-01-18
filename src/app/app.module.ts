@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CoinEntryForm } from './coinEntryForm/coinEntryForm.component';
 import { CoinDisplay } from './coinDisplay/coinDisplay.component';
+import { QuantityEntryForm } from './quantityEntryForm/quantityEntryForm.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CoinEntryForm,
-    CoinDisplay
+    CoinDisplay,
+    QuantityEntryForm
   ],
   imports: [
     BrowserModule,

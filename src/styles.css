@@ -3,10 +3,10 @@
 html {
     /* background: url('../assets/bg01.jpg') no-repeat center center fixed;
     background-size: cover; */
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 input {
-    color: white;
+    color: black;
 }

@@ -13,6 +13,12 @@
             (updateCoinValues)="updateCoinValues()">
     </coin-entry-form>
 
+    <quantity-entry-form
+            [label]="'Quantity'"
+            [(quantity)]="state.quantity"
+            (updateCoinValues)="updateCoinValues()">
+    </quantity-entry-form>
+
     <coin-display [label]="'Listing Fee'" [coins]="state.coinFeeListing"></coin-display>
     <coin-display [label]="'Exchange Fee'" [coins]="state.coinFeeExchange"></coin-display>
     <coin-display [label]="'Profit'" [coins]="state.coinProfit"></coin-display>
