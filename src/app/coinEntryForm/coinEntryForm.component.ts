@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AppConstants } from '../app.constants';
 
 @Component({
     selector: 'coin-entry-form',
@@ -14,7 +15,7 @@ export class CoinEntryForm {
     copper: number = 0;
 
     calcCoinTotal() {
-        const total = this.gold * 10000 + this.silver * 100 + this.copper * 1;
+        const total = this.gold * AppConstants.goldMultiplier + this.silver * AppConstants.silverMultiplier + this.copper * AppConstants.copperMultiplier;
         this.coins = total || 0;
     }
 
