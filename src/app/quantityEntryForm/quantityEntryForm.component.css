@@ -1,11 +1,22 @@
 .quantityEntryForm {
-    padding: 20px;
+    padding-bottom: 20px;
 }
 .quantityEntryForm .inputs {
     display: flex;
     justify-content: center;
 }
+.quantityEntryForm input {
+    width: 40px;
+    padding: 6px;
+    margin: 0 2px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+}
 .quantityEntryForm .label {
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: center;
 }

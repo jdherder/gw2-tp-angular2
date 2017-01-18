@@ -5,6 +5,16 @@
     display: flex;
     justify-content: center;
 }
+.coinEntryForm input {
+    width: 60px;
+    padding: 10px 10px 10px 30px;
+    margin: 0 5px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+}
 .coinEntryForm input.gold {
     background: url('../../assets/gold.png') no-repeat 8px center;
 }
