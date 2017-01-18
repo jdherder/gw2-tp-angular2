@@ -1,4 +1,6 @@
 <!-- app component template -->
 
-<coin-entry-form [label]="'Buy Price'" [coins]="state.coinBuyPrice"></coin-entry-form>
-<coin-entry-form [label]="'List Price'" [coins]="state.coinListPrice"></coin-entry-form>
+<coin-entry-form [label]="'Buy Price'" [(coins)]="state.coinBuyPrice"></coin-entry-form>
+<coin-entry-form [label]="'List Price'" [(coins)]="state.coinListPrice"></coin-entry-form>
+
+<coin-display [label]="'Display Buy Price'" [coins]="state.coinBuyPrice"></coin-display>

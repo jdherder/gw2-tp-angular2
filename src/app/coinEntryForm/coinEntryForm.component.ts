@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { AppConstants } from '../app.constants';
 
 @Component({
@@ -9,14 +9,15 @@ import { AppConstants } from '../app.constants';
 export class CoinEntryForm {
     @Input() label: string;
     @Input() coins: number;
+    @Output() coinsChange = new EventEmitter<number>();
 
     gold: number = 0;
     silver: number = 0;
     copper: number = 0;
 
     calcCoinTotal() {
-        const total = this.gold * AppConstants.goldMultiplier + this.silver * AppConstants.silverMultiplier + this.copper * AppConstants.copperMultiplier;
-        this.coins = total || 0;
+        this.coins = this.gold * AppConstants.goldMultiplier + this.silver * AppConstants.silverMultiplier + this.copper * AppConstants.copperMultiplier;
+        this.coinsChange.emit(this.coins);
     }
 
     checkNumericInput(event) {

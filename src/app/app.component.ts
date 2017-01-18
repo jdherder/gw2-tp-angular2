@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   state: any = {
-    coinBuyPrice: 3,
+    coinBuyPrice: 0,
     coinListPrice: 0,
     coinFeeListing: 0,
     coinFeeExchange: 0,

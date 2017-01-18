@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CoinEntryForm } from './coinEntryForm/coinEntryForm.component';
+import { CoinDisplay } from './coinDisplay/coinDisplay.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoinEntryForm
+    CoinEntryForm,
+    CoinDisplay
   ],
   imports: [
     BrowserModule,
