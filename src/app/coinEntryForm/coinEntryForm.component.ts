@@ -10,14 +10,16 @@ export class CoinEntryForm {
     @Input() label: string;
     @Input() coins: number;
     @Output() coinsChange = new EventEmitter<number>();
+    @Output() updateCoinValues = new EventEmitter<any>();
 
     gold: number = 0;
     silver: number = 0;
     copper: number = 0;
 
     calcCoinTotal() {
-        this.coins = this.gold * AppConstants.goldMultiplier + this.silver * AppConstants.silverMultiplier + this.copper * AppConstants.copperMultiplier;
-        this.coinsChange.emit(this.coins);
+        const coins = this.gold * AppConstants.goldMultiplier + this.silver * AppConstants.silverMultiplier + this.copper * AppConstants.copperMultiplier;
+        this.coinsChange.emit(coins);
+        this.updateCoinValues.emit();
     }
 
     checkNumericInput(event) {

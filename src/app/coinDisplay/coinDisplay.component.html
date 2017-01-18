@@ -1,5 +1,11 @@
 <!-- coinDisplay component template -->
 
 <div class="coinDisplay">
-    <div class="label">{{label}} ({{coins}})</div>
+    <div class="coin-container">
+        {{sign}}
+        <div class="coin gold"></div><div class="value">{{gold}}</div>
+        <div class="coin silver"></div><div class="value">{{silver}}</div>
+        <div class="coin copper"></div><div class="value">{{copper}}</div>
+    </div>
+    <div class="label">{{label}}</div>
 </div>
