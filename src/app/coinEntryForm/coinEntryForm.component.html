@@ -1,0 +1,28 @@
+<!-- coinEntryForm component template -->
+
+<div class="coinEntryForm">
+    <div class="inputs">
+        <input class="gold"
+               type="text"
+               [(ngModel)]="gold"
+               (focus) = "selectAllContent($event)"
+               (keypress)="checkNumericInput($event)"
+               (ngModelChange)="calcCoinTotal()"
+               maxLength="4" />
+        <input class="silver"
+               type="text"
+               [(ngModel)]="silver"
+               (focus) = "selectAllContent($event)"
+               (keypress)="checkNumericInput($event)"
+               (ngModelChange)="calcCoinTotal()"
+               maxLength="2" />
+        <input class="copper"
+               type="text"
+               [(ngModel)]="copper"
+               (focus) = "selectAllContent($event)"
+               (keypress)="checkNumericInput($event)"
+               (ngModelChange)="calcCoinTotal()"
+               maxLength="2" />
+    </div>
+    <div className="label">{{label}} ({{coins}})</div>
+</div>

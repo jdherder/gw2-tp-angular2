@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  state: any = {
+    coinBuyPrice: 3,
+    coinListPrice: 0,
+    coinFeeListing: 0,
+    coinFeeExchange: 0,
+    coinNet: 0,
+    coinProfit: 0
+  };
 }
