@@ -1,11 +1,17 @@
 <!-- coinDisplay component template -->
 
-<div class="coinDisplay">
-    <div class="coin-container">
+<div class="coinDisplay" *ngIf="coins">
+    <div class="coin-container" [ngClass]="{'negative': sign}">
         {{sign}}
-        <div class="coin gold"></div><div class="value">{{gold}}</div>
-        <div class="coin silver"></div><div class="value">{{silver}}</div>
-        <div class="coin copper"></div><div class="value">{{copper}}</div>
+        <span class="coin-value" [hidden]="!gold">
+            <div class="coin gold"></div><div class="value">{{gold}}</div>
+        </span>
+        <span class="coin-value" [hidden]="!silver">
+            <div class="coin silver"></div><div class="value">{{silver}}</div>
+        </span>
+        <span class="coin-value" [hidden]="!copper">
+            <div class="coin copper"></div><div class="value">{{copper}}</div>
+        </span>
     </div>
     <div class="label">{{label}}</div>
 </div>

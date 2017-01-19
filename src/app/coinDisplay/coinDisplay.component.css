@@ -8,7 +8,7 @@
     justify-content: flex-end;
     align-items: center;
 }
-.coinDisplay.negative {
+.coinDisplay .coin-container.negative {
     color: red;
 }
 .coinDisplay .coin {
@@ -26,7 +26,6 @@
 .coinDisplay .copper {
     background: url('../../assets/copper.png') no-repeat center center;
 }
-
 .coinDisplay .value {
     display: inline-block;
     margin: 0 18px 0 1px;
@@ -34,7 +33,6 @@
     text-align: right;
     font-size: 22px;
 }
-
 .coinDisplay .label {
     font-size: 10px;
     margin: 0 18px 0 0;
